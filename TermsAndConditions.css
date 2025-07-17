@@ -1,0 +1,268 @@
+.terms-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #4a5568;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.terms-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.terms-header h1 {
+  color: #2d3748;
+  font-size: 2.25rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.terms-header p {
+  color: #718096;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.last-updated {
+  background-color: #fef5e7;
+  padding: 16px;
+  border-radius: 6px;
+  margin-bottom: 32px;
+  text-align: center;
+  font-weight: 500;
+  color: #975a16;
+  border: 1px solid #f6e05e;
+}
+
+.terms-content {
+  padding: 0;
+}
+
+.terms-section {
+  margin-bottom: 40px;
+}
+
+.terms-section h2 {
+  color: #2d3748;
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+  font-weight: 600;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 8px;
+}
+
+.terms-section h3 {
+  color: #4a5568;
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  margin-top: 24px;
+  font-weight: 500;
+}
+
+.terms-section p {
+  margin-bottom: 16px;
+  color: #4a5568;
+  text-align: left;
+}
+
+.terms-section li {
+  margin-bottom: 8px;
+  color: #4a5568;
+  text-align: left;
+}
+
+.terms-section ul,
+.terms-section ol {
+  margin-left: 20px;
+  margin-bottom: 16px;
+  padding-left: 0;
+}
+
+.contact-info {
+  background-color: #edf2f7;
+  padding: 20px;
+  border-radius: 6px;
+  border-left: 4px solid #4299e1;
+  margin-top: 16px;
+}
+
+.contact-info ul {
+  margin-left: 20px;
+}
+
+.contact-info li {
+  margin-bottom: 8px;
+}
+
+.contact-info strong {
+  color: #2b6cb0;
+}
+
+.highlight {
+  background-color: #fef5e7;
+  padding: 16px;
+  border-radius: 6px;
+  border-left: 4px solid #ed8936;
+  margin: 20px 0;
+}
+
+.highlight strong {
+  color: #c05621;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .terms-container {
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  .terms-header {
+    padding: 30px 0;
+  }
+  
+  .terms-header h1 {
+    font-size: 2em;
+  }
+  
+  .terms-section h2 {
+    font-size: 1.3em;
+  }
+  
+  .terms-section h3 {
+    font-size: 1.1em;
+  }
+  
+  .terms-section ul,
+  .terms-section ol {
+    margin-left: 20px;
+  }
+  
+  .contact-info {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .terms-container {
+    margin: 5px;
+    padding: 10px;
+  }
+  
+  .terms-header h1 {
+    font-size: 1.8em;
+  }
+  
+  .terms-section h2 {
+    font-size: 1.2em;
+  }
+  
+  .terms-section h3 {
+    font-size: 1em;
+  }
+  
+  .terms-section p,
+  .terms-section li {
+    text-align: left;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .terms-container {
+    box-shadow: none;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .terms-header {
+    border-bottom: 2px solid #000;
+  }
+  
+  .terms-section h2 {
+    border-bottom: 1px solid #000;
+    page-break-after: avoid;
+  }
+  
+  .terms-section {
+    page-break-inside: avoid;
+  }
+  
+  .highlight {
+    border: 1px solid #000;
+    background-color: #f0f0f0;
+  }
+}
+
+/* Accessibility Improvements */
+.terms-section h2:focus,
+.terms-section h3:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
+.terms-container a {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.terms-container a:hover,
+.terms-container a:focus {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .terms-container {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+  }
+  
+  .terms-header h1 {
+    color: #4da6ff;
+  }
+  
+  .terms-section h2 {
+    color: #4da6ff;
+    border-bottom-color: #333;
+  }
+  
+  .terms-section h3 {
+    color: #b0b0b0;
+  }
+  
+  .last-updated {
+    background-color: #2a2a2a;
+    color: #b0b0b0;
+  }
+  
+  .contact-info {
+    background-color: #2a2a2a;
+    border-left-color: #4da6ff;
+  }
+  
+  .highlight {
+    background-color: #2a2a00;
+    border-left-color: #ffcc00;
+  }
+  
+  .terms-container a {
+    color: #4da6ff;
+  }
+  
+  .terms-container a:hover,
+  .terms-container a:focus {
+    color: #80bfff;
+  }
+} 
